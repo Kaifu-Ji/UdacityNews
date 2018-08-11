@@ -1,0 +1,13 @@
+<scroll-view scroll-x>
+  <view class='news-item' wx:for="{{news}}">
+    <view class='news-test-wrapper'>
+      <view class="temp">{{item.title}}</view>
+      <view class="info-wrapper">
+        <view class="day">Time</view>
+        <view class="date">Source</view>
+      </view>
+
+    </view>
+    <image class="weather-icon" src="{{item.imgURL}}"></image>
+  </view>
+</scroll-view>
